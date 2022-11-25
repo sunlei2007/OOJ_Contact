@@ -1,0 +1,84 @@
+﻿@import "reset.css";
+/*---------------------------*/
+/*Header footer use*/
+/*---------------------------*/
+:root {
+    --app-header-height: 56px;
+    --app-footer-height: 400px;
+    --app-section-padding-height: 120px;
+    --app-sectitle-padding-height: 40px;
+    --app-content-text-color: #949393;
+    --app-blue: #5fb7f8;
+}
+
+/*main content*/
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #393939;
+}
+
+.site-main-content {
+    width: 100%;
+    height: 100%;
+
+}
+
+.site-main-content > div {
+    margin-top: 10px;
+}
+.title-cls {
+    display: flex;
+    width:100%;
+    margin-top:60px !important;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    width: 100%;
+    background-color:#494949;
+    color:#fff;
+    border-radius:4px;
+    padding:5px;
+}
+.grid-item:hover {
+    border:solid 1px #5fb7f8;
+}
+
+.form-submit {
+    width: 80px;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    border-radius:4px;
+    background-color: var(--app-blue);
+    transition: all 0.25s ease-in-out;
+}
+
+
+.form-name {
+    width: 300px;
+    height: 50px;
+    border: solid 1px #cce8fe;
+    padding: 10px 26px 10px 26px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+
+.msg {
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    text-align: center;
+    color: var(--app-blue);
+}
